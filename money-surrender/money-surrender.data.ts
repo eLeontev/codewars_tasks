@@ -18,8 +18,15 @@ const fromPlnToDollar = {
     expected: { count: 20, currency: currencies.dollar },
 };
 
+const betweenTheSameCurrency = {
+    from: { count: 100, currency: currencies.pln },
+    to: { count: 23, currency: currencies.pln },
+    expected: { count: 77, currency: currencies.pln },
+};
+
 export const positiveTestData = [
     fromDollarToEuro,
     fromEuroToPln,
     fromPlnToDollar,
+    betweenTheSameCurrency,
 ];
