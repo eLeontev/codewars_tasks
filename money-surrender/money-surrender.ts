@@ -12,7 +12,6 @@ export const moneySurrender = <I extends currencies, O extends currencies>(
     if (availableCount < price) {
         throw new Error(notEnoughMoneyErrorMessage);
     }
-    debugger;
 
     return { count: availableCount - price, currency };
 };
